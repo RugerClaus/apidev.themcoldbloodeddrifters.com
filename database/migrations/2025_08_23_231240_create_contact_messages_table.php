@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', 100);
             $table->enum('subject', ['book', 'inquiry']);
+            $table->string('email', 100);
             $table->string('phone', 30)->nullable();
             $table->text('body');
             $table->timestamps();
