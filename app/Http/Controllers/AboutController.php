@@ -18,9 +18,9 @@ class AboutController extends Controller
 
             'members' => $members->map(fn($m) => [
                 'name' => $m->name,
-                'instrument' => $m->instruments,
+                'instrument' => $m->instrument,
                 'bio' => $m->bio,
-                'portrait' => $m->portrait_url
+                'portrait' => $m->portrait
             ]),
             'theband' => [
             'name' => $band->name,
