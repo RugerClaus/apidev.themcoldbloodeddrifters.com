@@ -17,9 +17,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             CarouselImageSeeder::class,
-            BandSeeder::class,
-            MemberSeeder::class,
-            HomeTextSeeder::class,
         ]);
     }
 }
